@@ -4,7 +4,6 @@ Este repositorio es donde esta documentado nuestro proyecto para RSM por parte d
 
 # Integrantes
 
-- Krissia Alejandra Castaneda Diaz
 - Sara Abigail Galicia Altuve
 - Josue Isaac Guevara Portillo
 - Andy Josue Medina Alvarez
