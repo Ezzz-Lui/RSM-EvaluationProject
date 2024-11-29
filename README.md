@@ -25,3 +25,20 @@ Este repositorio es donde esta documentado nuestro proyecto para RSM por parte d
 
 - [x] [Python](https://www.python.org/)
 
+# Informacion de la base de datos
+
+## Diagramas de la base de datos - ERD
+- [Diagrama ER de la base de datos](/ERD/ERD-RSM.jpg)
+![ERD](/ERD/ERD-RSM.jpg)
+
+- [Diagrama logico de la base de datos](/ERD/DB_Diagrama.png)
+![ERD](/ERD/DB_Diagrama.png)
+
+- [Tabla **Clientes**](/Capturas/clientes.png)
+![Clientes](/Capturas/clientes.png)
+- [Tabla **Productos**](/Capturas/productos.png)
+![Productos](/Capturas/productos.png)
+- [Tabla **Ventas**](/Capturas/ventas.png)
+![Ventas](/Capturas/ventas.png)
+- [Tabla **Transacciones**](/Capturas/transacciones.png)
+![Transacciones](/Capturas/transacciones.png)
