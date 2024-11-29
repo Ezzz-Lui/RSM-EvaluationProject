@@ -1,6 +1,7 @@
 # RSM-EvaluationProject
 
-Este repositorio es donde esta documentado nuestro proyecto para RSM por parte de actividad final para el bootcamp Data Analyst
+Este repositorio es donde esta documentado nuestro proyecto para RSM por parte de actividad final para el bootcamp Data Analyst.
+
 
 # Integrantes
 
@@ -34,10 +35,44 @@ Este repositorio es donde esta documentado nuestro proyecto para RSM por parte d
 - [Diagrama logico de la base de datos](/ERD/DB_Diagrama.png)
 ![ERD](/ERD/DB_Diagrama.png)
 
+## Tabla Clientes
+
+- En esta tabla se guardan los registros de los clientes que realizan compras en la tienda, se han agregado los siguientes campos:
+
+- **clienteid**: Identificador unico para cada cliente.
+- **nombrecliente**: Nombre del cliente.
+- **email**: Correo electronico del cliente.
+- **telefono**: Numero de telefono del cliente.
+- **direccion**: Direccion del cliente.
+
 - [Tabla **Clientes**](/Capturas/clientes.png)
 ![Clientes](/Capturas/clientes.png)
+
+## Tabla Productos
+
+- En esta tabla se guardan los registros de los productos que se venden en la tienda, se han agregado los siguientes campos:
+
+- **productoid**: Identificador unico para cada producto.
+- **nombre**: Nombre del producto o articulo.
+- **categoria**: Categoria a la que pertenece el producto.
+- **preciounitario**: Precio unitario del producto.
+
 - [Tabla **Productos**](/Capturas/productos.png)
 ![Productos](/Capturas/productos.png)
+
+## Tabla Ventas
+
+- En esta tabla se guardan los registros de las ventas realizadas por los clientes, se han agregado los siguientes campos:
+
+- **ventaid**: Identificador unico para cada registro de venta.
+- **clienteid**: Identificador unico del cliente que realizo la compra.
+- **productoid**: Identificador unico del producto que se vendio.
+- **cantidad**: Cantidad de productos vendidos del mismo articulo.
+- **fechaventa**: Fecha en la que se realizo la venta pero no necesariamente la fecha en la que se registro la transaccion (Como fecha de corte o lapsos de tiempo para agrupar ventas).
+- **region**: Region en la que se realizo la venta(Norte, Sur, Este, Oeste).
+- **transaccionid**: Identificador unico de la transaccion en la que se registro la venta.
+- **preciounitario**: Precio unitario del producto vendido independientemente de la cantidad.
+
 - [Tabla **Ventas**](/Capturas/ventas.png)
 ![Ventas](/Capturas/ventas.png)
 
