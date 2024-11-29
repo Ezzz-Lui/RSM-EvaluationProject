@@ -40,5 +40,15 @@ Este repositorio es donde esta documentado nuestro proyecto para RSM por parte d
 ![Productos](/Capturas/productos.png)
 - [Tabla **Ventas**](/Capturas/ventas.png)
 ![Ventas](/Capturas/ventas.png)
+
+## Tabla Transacciones
+
+- En esta tabla se guardan los registros de las transacciones realizadas por los clientes, se han agregado los siguientes campos:
+
+- **transaccion_id**: Es el identificador único de la transacción, independientemente de la cantidad de productos que se hayan vendido en una sola transacción.
+
+- **Fecha de Transacción**: La fecha en la que se registró la transacción en el sistema, que puede ser diferente a la fecha de venta debido a procesos internos de la empresa para el registro o auditoria en lapsos de tiempo especeficos para sus operaciones.
+
+- **Monto de Transacción**: El monto total de la transacción, que es multiplicación de la cantidad de productos vendidos por el precio unitario de cada producto
 - [Tabla **Transacciones**](/Capturas/transacciones.png)
 ![Transacciones](/Capturas/transacciones.png)
