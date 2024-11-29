@@ -87,3 +87,60 @@ Este repositorio es donde esta documentado nuestro proyecto para RSM por parte d
 - **Monto de Transacción**: El monto total de la transacción, que es multiplicación de la cantidad de productos vendidos por el precio unitario de cada producto
 - [Tabla **Transacciones**](/Capturas/transacciones.png)
 ![Transacciones](/Capturas/transacciones.png)
+
+
+# Dashboard 📊
+
+# Dashboard de Análisis de Datos
+
+Este dashboard de Power BI proporciona una visión integral del análisis de datos de ventas, transacciones, productos y categorías. Está diseñado para ofrecer información clave de manera visual y fácil de interpretar.
+
+## Resumen General
+- **Ventas Totales:** $4.6 millones.
+- **Cantidad Total Vendida:** 4,936 productos.
+- **Número de Transacciones:** 1,000.
+
+## Principales Indicadores
+### Top 5 Clientes por Ventas
+- Representa los cinco clientes con mayores montos de ventas totales y sus respectivos promedios.
+- **Clientes destacados:** Cliente 43 ($110 mil), Cliente 63 ($85 mil), entre otros.
+
+### Ventas por Categoría
+- Distribución de ventas entre las principales categorías:
+  - Hogar: 29.6%
+  - Juguetería: 29.4%
+  - Electrónica: 28.7%
+  - Periféricos: 12.3%
+
+### Ventas por Región
+- Análisis del rendimiento por región:
+  - **Este:** $1.32 millones (26.45%).
+  - **Norte:** $1.22 millones (28.73%).
+  - **Oeste:** $1.05 millones (21.96%).
+  - **Sur:** $1.01 millones (22.86%).
+
+## Tendencias Mensuales
+- Número de productos vendidos mes a mes, destacando picos de ventas en meses específicos.
+
+## Productos Más y Menos Vendidos
+### Más Vendidos
+- Producto 1: 210 unidades.
+- Producto 2: 203 unidades.
+- Producto 3: 197 unidades.
+
+### Menos Vendidos
+- Producto 22: 126 unidades.
+- Producto 28: 111 unidades.
+- Producto 19: 108 unidades.
+
+## Detalles Adicionales
+- **Comparación entre ventas por categoría y región:** Permite identificar las categorías más exitosas en cada región.
+- **Visualización interactiva:** Filtrado dinámico por año, región y categoría.
+
+## Uso Práctico
+Este dashboard es ideal para:
+- Identificar áreas de oportunidad.
+- Optimizar estrategias de ventas y marketing.
+- Monitorear el desempeño en tiempo real.
+
+
