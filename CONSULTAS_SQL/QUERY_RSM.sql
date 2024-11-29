@@ -1,37 +1,33 @@
-/*Consultas SQL para Extracción de Información
-Ventas totales por categoría de producto*/
-SELECT
-    p.Categoria,
-    SUM(v.Cantidad * p.preciounitario) AS VentasTotales
-FROM
-    Ventas v
-INNER JOIN Productos p ON v.ProductoID = p.ProductoID
-GROUP BY
-    p.Categoria;
+/* Consultas SQL para Extracción de Información */
 
-/*Clientes con mayor valor de compra*/
-SELECT
-    c.NombreCliente,
-    SUM(v.Cantidad * p.PrecioUnitario) AS TotalGastado
-FROM
-    Clientes c
-INNER JOIN Ventas v ON c.ClienteID = v.ClienteID
-INNER JOIN Productos p ON v.ProductoID = p.ProductoID
-GROUP BY
-    c.NombreCliente
-ORDER BY
-    TotalGastado DESC;
+/* Ventas totales por categoría de producto */
+SELECT p.categoria,
+        SUM(t.monto_total)  AS ventas_totales
+FROM ventas AS V
+INNER JOIN productos        AS p        ON v.productoid         = p.productoid
+INNER JOIN transacciones    AS t        ON t.transaccionid      = v.transaccionid
+GROUP BY p.categoria;
 
-/*Productos más vendidos por región*/
-SELECT region,nombreproducto, cantidad_vendida
+/* Clientes con mayor valor de compra */
+SELECT c.nombrecliente,
+     SUM(t.monto_total)      AS total_gastado
+FROM       clientes               AS  c
+INNER JOIN ventas           AS  v ON c.clienteid        = v.clienteid
+INNER JOIN transacciones    AS  t ON t.transaccionid    = v.transaccionid
+GROUP BY c.nombrecliente
+ORDER BY   total_gastado DESC;
+
+/* Productos más vendidos por región */
+SELECT region,
+    nombreproducto,
+    cantidad_vendida
 FROM (
-    SELECT 
-        v.region,
+    SELECT v.region,
         p.nombreproducto,
         SUM(v.cantidad) AS cantidad_vendida,
-        ROW_NUMBER() OVER (PARTITION BY v.region ORDER BY SUM(v.cantidad) DESC) AS ranking
-    FROM public.productos p
-    JOIN public.ventas v ON v.productoid = p.productoid
+        RANK() OVER (PARTITION BY v.region ORDER BY SUM(v.cantidad) DESC) AS ranking
+    FROM productos p
+    JOIN ventas v ON v.productoid = p.productoid
     GROUP BY v.region, p.nombreproducto
 ) AS ranked_products
 WHERE ranking <= 5
