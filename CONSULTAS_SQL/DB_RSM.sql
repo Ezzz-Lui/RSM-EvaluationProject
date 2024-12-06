@@ -1,35 +1,42 @@
--- Crear la tabla Clientes
-CREATE TABLE clientes (
-    clienteid INTEGER PRIMARY KEY,
+CREATE TABLE clientes
+(
+    clienteid     INTEGER PRIMARY KEY,
     nombrecliente VARCHAR(100),
-    email VARCHAR(100),
-    telefono VARCHAR(20),
-    direccion VARCHAR(1000)
+    email         VARCHAR(100),
+    telefono      VARCHAR(20),
+    direccion     VARCHAR(1000)
 );
 
--- Crear la tabla Productos
-CREATE TABLE productos (
-    productoid INTEGER PRIMARY KEY,
+CREATE TABLE productos
+(
+    productoid     INTEGER PRIMARY KEY,
     nombreproducto VARCHAR(100),
-    categoria VARCHAR(50),
-    preciounitario NUMERIC(10,2)
+    categoria      VARCHAR(50),
+    preciounitario NUMERIC(10, 2)
 );
 
--- Crear la tabla de Transacciones
-CREATE TABLE transacciones (
-    transaccionid INTEGER PRIMARY KEY,
-    fechatransaccion DATE,
-    monto_total NUMERIC(10,2)
+CREATE TABLE ventas
+(
+    ventaid        INTEGER PRIMARY KEY,
+    fechaventa     DATE,
+    region         VARCHAR(50),
+    preciounitario FLOAT,
+    montototal     FLOAT,
+    clienteid      INTEGER references clientes(clienteid)
 );
 
--- Crear la tabla Ventas
-CREATE TABLE ventas (
-    ventaid INTEGER PRIMARY KEY,
-    clienteid INTEGER REFERENCES clientes(clienteid),
-    productoid INTEGER REFERENCES productos(productoid),
-    cantidad INTEGER,
-    fechaventa DATE,
-    region VARCHAR(50),
-    transaccionid INTEGER REFERENCES transacciones(transaccionid),
-    preciounitario FLOAT
+create table venta_detalle
+(
+    ventaid        integer        not null
+        references ventas
+            on delete cascade,
+    cantidad       integer        not null,
+    preciounitario numeric(10, 2) not null,
+    productoid     integer        not null
+        references productos
+            on delete cascade,
+    clienteid      integer        not null
+        references clientes
+            on delete cascade,
+    primary key (ventaid, productoid, clienteid)
 );

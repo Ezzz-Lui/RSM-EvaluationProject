@@ -1,1 +1,0 @@
-# Descripcion del diagrama ERD
