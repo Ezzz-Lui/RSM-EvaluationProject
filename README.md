@@ -18,6 +18,7 @@ Este repositorio es donde esta documentado nuestro proyecto para RSM por parte d
 | [SQL](https://drive.google.com/drive/folders/1dRTCiiEzxL33S-1qyCtmXk2xZZpMyP2d?usp=sharing)        | Lenguaje de consultas para desarrollo de la base de datos y manipulacion de datos  |
 | [Visio](https://drive.google.com/drive/folders/1Y4iuff89TxRmQEcQBLWrGptIQf1-sI9Y) | Herramienta para crear diagramas                                                                           |
 | [Drive](https://drive.google.com/drive/folders/1uAj_9s2-jROsAIQfNYyujRo7ImrerVvS?usp=sharing)     | Documento del Perfil del Proyecto                                                                                                                    |
+| [Presentacion](https://www.canva.com/design/DAGYeB8pnt8/rq78WKzyJr4gWSn22pC5bQ/edit?utm_content=DAGYeB8pnt8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)     | Presentacion del proyecto                                                                                                                    |
 # Herramientas 🛠️
 
 - [x] [PostgreSQL](https://www.postgresql.org/)
