@@ -33,6 +33,17 @@ Este repositorio es donde esta documentado nuestro proyecto para RSM por parte d
 - [Diagrama ER de la base de datos](/ERD/DB_ERD.png)
 ![ERD](/ERD/DB_ERD.png)
 
+## Tablas
+- [Tabla de ventas](/CAPTURAS/Ventas.png)
+![ventas](/CAPTURAS/Ventas.png)
+- [Tabla de productos](/CAPTURAS/productos.png)
+![productos](/CAPTURAS/productos.png)
+- [Tabla de venta_detalle](/CAPTURAS/venta_detalle.png)
+![venta_detalle](/CAPTURAS/venta_detalle.png)
+- [Tabla de clientes](/CAPTURAS/clientes.png)
+![clientes](/CAPTURAS/clientes.png)
+
+
 # Dashboard 📊
 
 # Dashboard de Análisis de Datos
@@ -77,9 +88,15 @@ Este dashboard de Power BI proporciona una visión integral del análisis de dat
 - Producto 28: 111 unidades.
 - Producto 19: 108 unidades.
 
+### Distribución de las Regiones Geográficas de Ventas en El Salvador
+- Esta distribución geográfica de ventas se realizó dividiendo el territorio salvadoreño en cuatro regiones principales: Norte, Sur, Este y Oeste, utilizando las ISO de cada departamento como referencia en el mapa coroplético
+
 ## Detalles Adicionales
 - **Comparación entre ventas por categoría y región:** Permite identificar las categorías más exitosas en cada región.
 - **Visualización interactiva:** Filtrado dinámico por año, región y categoría.
+
+### Cesto de compras
+- **NOTA**: Tomar en cuenta que las parejas fueron por clientes no por ventas (por estar separadas).
 
 ## Uso Práctico
 Este dashboard es ideal para:
