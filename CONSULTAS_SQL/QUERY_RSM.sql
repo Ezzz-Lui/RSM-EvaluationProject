@@ -2,18 +2,18 @@
 
 /* Ventas totales por categoría de producto */
 SELECT p.categoria,
-        SUM(t.monto_total)  AS ventas_totales
+        SUM(v.montototal)  AS ventas_totales
 FROM ventas AS V
-INNER JOIN productos        AS p        ON v.productoid         = p.productoid
-INNER JOIN transacciones    AS t        ON t.transaccionid      = v.transaccionid
+INNER JOIN venta_detalle   AS vd      ON vd.ventaid      = v.ventaid
+INNER JOIN productos        AS p        ON vd.productoid         = p.productoid
 GROUP BY p.categoria;
 
 /* Clientes con mayor valor de compra */
 SELECT c.nombrecliente,
-     SUM(t.monto_total)      AS total_gastado
+     SUM(v.montototal)      AS total_gastado
 FROM       clientes               AS  c
-INNER JOIN ventas           AS  v ON c.clienteid        = v.clienteid
-INNER JOIN transacciones    AS  t ON t.transaccionid    = v.transaccionid
+INNER JOIN venta_detalle   AS vd      ON vd.clienteid = c.clienteid
+INNER JOIN ventas           AS  v ON vd.ventaid      = v.ventaid
 GROUP BY c.nombrecliente
 ORDER BY   total_gastado DESC;
 
@@ -24,10 +24,11 @@ SELECT region,
 FROM (
     SELECT v.region,
         p.nombreproducto,
-        SUM(v.cantidad) AS cantidad_vendida,
-        RANK() OVER (PARTITION BY v.region ORDER BY SUM(v.cantidad) DESC) AS ranking
+        SUM(vd.cantidad) AS cantidad_vendida,
+        RANK() OVER (PARTITION BY v.region ORDER BY SUM(vd.cantidad) DESC) AS ranking
     FROM productos p
-    JOIN ventas v ON v.productoid = p.productoid
+	JOIN venta_detalle vd on vd.productoid = p.productoid
+    JOIN ventas v ON v.ventaid=vd.ventaid
     GROUP BY v.region, p.nombreproducto
 ) AS ranked_products
 WHERE ranking <= 5
