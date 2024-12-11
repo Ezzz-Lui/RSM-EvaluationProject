@@ -30,8 +30,8 @@ Este repositorio es donde esta documentado nuestro proyecto para RSM por parte d
 # Informacion de la base de datos
 
 ## Diagramas de la base de datos - ERD
-- [Diagrama ER de la base de datos](/ERD/DB_ERD.png)
-![ERD](/ERD/DB_ERD.png)
+- [Diagrama ER de la base de datos](/ERD/RSM - FINAL.jpg)
+![ERD](/ERD/RSM - FINAL.jpg)
 
 ## Tablas
 - [Tabla de ventas](/Capturas/ventas.png)
