@@ -45,7 +45,7 @@ Este repositorio es donde esta documentado nuestro proyecto para RSM por parte d
 
 
 # Dashboard 📊
-
+- [Dashboard]([/Capturas/clientes.png](https://app.powerbi.com/view?r=eyJrIjoiYjBhZmM1NzUtZDc4OC00M2VjLWFkYmMtZDUzNjFmNzU4ZTBkIiwidCI6IjMwZWJhMGFhLTUyZjItNDE2Ny05NDNjLWNmMGZhYzU0MzhhNyIsImMiOjR9))
 # Dashboard de Análisis de Datos
 
 Este dashboard de Power BI proporciona una visión integral del análisis de datos de ventas, transacciones, productos y categorías. Está diseñado para ofrecer información clave de manera visual y fácil de interpretar.
