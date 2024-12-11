@@ -36,12 +36,12 @@ Este repositorio es donde esta documentado nuestro proyecto para RSM por parte d
 ## Tablas
 - [Tabla de ventas](/Capturas/ventas.png)
 ![ventas](/Capturas/ventas.png)
-- [Tabla de productos](/CAPTURAS/productos.png)
-![productos](/CAPTURAS/productos.png)
-- [Tabla de venta_detalle](/CAPTURAS/venta_detalle.png)
-![venta_detalle](/CAPTURAS/venta_detalle.png)
-- [Tabla de clientes](/CAPTURAS/clientes.png)
-![clientes](/CAPTURAS/clientes.png)
+- [Tabla de productos](/Capturas/productos.png)
+![productos](/Capturas/productos.png)
+- [Tabla de venta_detalle](/Capturas/venta_detalle.png)
+![venta_detalle](/Capturas/venta_detalle.png)
+- [Tabla de clientes](/Capturas/clientes.png)
+![clientes](/Capturas/clientes.png)
 
 
 # Dashboard 📊
