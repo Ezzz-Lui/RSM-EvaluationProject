@@ -34,8 +34,8 @@ Este repositorio es donde esta documentado nuestro proyecto para RSM por parte d
 ![ERD](/ERD/DB_ERD.png)
 
 ## Tablas
-- [Tabla de ventas](/CAPTURAS/ventas.png)
-![ventas](/CAPTURAS/ventas.png)
+- [Tabla de ventas](/Capturas/ventas.png)
+![ventas](/Capturas/ventas.png)
 - [Tabla de productos](/CAPTURAS/productos.png)
 ![productos](/CAPTURAS/productos.png)
 - [Tabla de venta_detalle](/CAPTURAS/venta_detalle.png)
